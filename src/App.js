@@ -6,7 +6,7 @@ dotenv.config();
 
 const MongoClient = require("mongodb").MongoClient;
 
-
+console.log(process.env.DB_CONNECTION_URL)
 mongoose.connect(process.env.DB_CONNECTION_URL, {
   useNewUrlParser: true,
   useFindAndModify: false,
