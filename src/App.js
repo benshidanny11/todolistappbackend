@@ -20,7 +20,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-const PORT = 7890;
+const PORT = process.env.PORT || 7890;
 const con = mongoose.connection;
 
 con.on("open", () => {
