@@ -30,7 +30,7 @@ con.on("open", () => {
 app.get("/", (req, res) => {
   res.status(200).json({
     status: 200,
-    message: "welcome to todolist app",
+    message: "Dear user, welcome to todolist app",
   });
 });
 app.use(express.json());
